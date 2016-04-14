@@ -1,4 +1,6 @@
-﻿prev_move = []
+﻿import time
+
+prev_move = []
 def check_can_move(pyr1, pyr2, i, j ):
     global prev_move
     if pyr1 == pyr2:
@@ -30,6 +32,9 @@ def check_can_move(pyr1, pyr2, i, j ):
     return True
 
 def AI(game):
+    # Пауза в секунду, чтобы успеть увидеть изменения
+    time.sleep(1)
+
     global prev_move
     #iterative solution https://en.wikipedia.org/wiki/Tower_of_Hanoi#Simpler_statement_of_iterative_solution
     if game.count == 0:
