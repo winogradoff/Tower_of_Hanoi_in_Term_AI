@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.board {
+    overflow: hidden;
+}
+
+.pyramid {
+    float: left;
+    width: 30%;
+    height: 450px;
+    margin-right: 5%;
+    background-color: #aaa;
+}
+
+.pyramid:last-of-type {
+    margin-right: 0;
+}
+
+.disk {
+    height: 50px;
+    margin-bottom: 50px;
+    background-color: blue;
+    color: white;
+    line-height: 50px;
+    text-align: center;
+}
+
+.disk:last-of-type {
+    margin-bottom: 0;
+}
