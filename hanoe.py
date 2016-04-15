@@ -147,6 +147,7 @@ if __name__ == "__main__":
 
         if '--web' in sys.argv:
             flask_thread = threading.Thread(target=server.run, args=(game,))
+            flask_thread.daemon = True
             flask_thread.start()
 
         game.draw()
