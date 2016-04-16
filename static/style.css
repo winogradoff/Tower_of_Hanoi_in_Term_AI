@@ -4,24 +4,22 @@
 }
 
 .board {
-    overflow: hidden;
+    /* Flexbox layout */
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 5px;
 }
 
 .pyramid {
-    float: left;
-    width: 30%;
-    height: 450px;
-    margin-right: 5%;
-    background-color: #aaa;
-}
-
-.pyramid:last-of-type {
-    margin-right: 0;
+    width: 100%;
+    margin: 5px;
 }
 
 .disk {
     height: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 25px;
     background-color: blue;
     color: white;
     line-height: 50px;

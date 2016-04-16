@@ -18,7 +18,7 @@ $(function () {
                     console.log(pyramidIndex + ': ' + disks);
                     var pyramid = $('<div class="pyramid">');
                     $.each(disks, function (diskIndex, disk) {
-                        pyramid.append('<div class="disk">' + disk + '</div>');
+                        pyramid.prepend('<div class="disk">' + disk + '</div>');
                     });
                     board.append(pyramid)
                 });
